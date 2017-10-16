@@ -1,0 +1,29 @@
+{
+    "name": "cajax/coding-test",
+    "description": "Discount calculation demo server",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Andrey Vyrodov",
+            "email": "cajax1@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "bcmath": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Teamleader\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Teamleader\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
