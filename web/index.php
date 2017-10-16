@@ -9,5 +9,5 @@ $requestBody = file_get_contents('php://input');
 
 $apiController = new ApiController();
 
-
+header('Content-type: text/json');
 echo json_encode($apiController->indexAction($requestBody), JSON_PRETTY_PRINT);

@@ -12,7 +12,7 @@ use Teamleader\Document\Customer;
  */
 class CustomerRepository extends AbstractRepository
 {
-    protected $dataFile = __DIR__.'/../../data/customers.json';
+    protected $dataFile = __DIR__ . '/../../data/customers.json';
     /**
      * @var Customer[]
      */

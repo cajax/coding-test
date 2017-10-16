@@ -5,7 +5,6 @@ namespace Teamleader\Repository;
 
 /**
  * Simple abstract wrapper for json files
- * @package Repository
  */
 class AbstractRepository
 {
@@ -21,7 +20,7 @@ class AbstractRepository
 
     public function __construct()
     {
-        foreach(json_decode(file_get_contents($this->dataFile)) as $item){
+        foreach (json_decode(file_get_contents($this->dataFile)) as $item) {
             $this->data[$item->id] = $item;
         }
 

@@ -7,6 +7,9 @@ use Teamleader\Document\Discount;
 use Teamleader\Document\Order;
 use Teamleader\Service\OrdersManager;
 
+/**
+ * Main demo controller
+ */
 class ApiController
 {
     /**
@@ -23,6 +26,6 @@ class ApiController
         }
 
         $ordersManager = new OrdersManager();
-        return$ordersManager->getDiscount($order);
+        return $ordersManager->getDiscount($order);
     }
 }

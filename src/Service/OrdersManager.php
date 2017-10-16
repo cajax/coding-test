@@ -49,7 +49,7 @@ class OrdersManager
 
         $this->discountCalculators = [];
 
-        $allFiles = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(__DIR__.'/DiscountCalculator/'));
+        $allFiles = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(__DIR__ . '/DiscountCalculator/'));
         $phpFiles = new RegexIterator($allFiles, '/Calculator\.php$/');
         /** @var SplFileInfo $phpFile */
         foreach ($phpFiles as $phpFile) {

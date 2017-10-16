@@ -11,7 +11,7 @@ interface CalculatorInterface
 {
     /**
      * @param Order $order
-     * @return
+     * @return Discount|null
      */
     public function getDiscount($order):?Discount;
 

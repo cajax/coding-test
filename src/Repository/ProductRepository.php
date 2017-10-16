@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace Teamleader\Repository;
 
 use stdClass;
-use Teamleader\Document\Customer;
 use Teamleader\Document\Product;
 
 /**
@@ -14,7 +13,7 @@ use Teamleader\Document\Product;
 class ProductRepository extends AbstractRepository
 {
 
-    protected $dataFile = __DIR__.'/../../data/products.json';
+    protected $dataFile = __DIR__ . '/../../data/products.json';
     /**
      * @var Product[]
      */

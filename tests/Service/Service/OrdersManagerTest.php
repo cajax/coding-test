@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Service;
 
+use PHPUnit\Framework\TestCase;
 use Teamleader\Service\DiscountCalculator\CalculatorInterface;
 use Teamleader\Service\OrdersManager;
-use PHPUnit\Framework\TestCase;
 
 /**
  * @coversDefaultClass \Teamleader\Service\OrdersManager
@@ -13,15 +13,15 @@ use PHPUnit\Framework\TestCase;
 class OrdersManagerTest extends TestCase
 {
     /**
-     * @covers ::getCalcuators
+     * @covers ::getCalculators
      */
     public function testGetCalculators()
     {
         $ordersManager = new OrdersManager();
         $calculators = $ordersManager->getCalcuators();
 
-        foreach ($calculators as $calculator){
-            $this->assertInstanceOf(CalculatorInterface::class,$calculator);
+        foreach ($calculators as $calculator) {
+            $this->assertInstanceOf(CalculatorInterface::class, $calculator);
         }
     }
 }
